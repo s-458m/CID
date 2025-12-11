@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <!-- ヘッダー -->
+
+    <!-- header -->
     <header class="site-header">
         <div class="inner header-inner">
             <a href="#top" class="site-logo">
@@ -57,54 +58,7 @@
             </div>
         </section>
 
-        <!-- ギャラリー -->
-        <section id="gallery" class="section gallery-section">
-            <div class="inner">
-
-                <div class="gallery-container">
-
-                    <div class="gallery-wrapper">
-                        <div class="gallery-track">
-
-                            <!-- ①元画像 -->
-                            <div class="gallery-item">
-                                <img src="img/gallery-1.jpg" alt="店外観">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-2.jpg" alt="棚のパン">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-3.jpg" alt="焼き立てパン">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-4.jpg" alt="店内">
-                            </div>
-
-                            <!-- ②無限ループ用のコピー -->
-                            <div class="gallery-item">
-                                <img src="img/gallery-1.jpg" alt="店外観">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-2.jpg" alt="棚のパン">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-3.jpg" alt="焼き立てパン">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="img/gallery-4.jpg" alt="店内">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- 停止ボタンをここに配置 -->
-                    <button id="gallery-toggle" class="gallery-toggle">⏸</button>
-                </div>
-
-            </div>
-        </section>
-
-
+        <!-- Gallery -->
 
         <!-- news -->
         <section id="news" class="section news-section">
@@ -239,13 +193,11 @@
                         </a>
                     </p>
                 </div>
-
             </div>
         </section>
-
     </main>
 
-    <!-- フッター -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-inner">
 
@@ -292,7 +244,6 @@
                     <img src="img/recruit.png" alt="スタッフ募集中">
                 </div>
             </div>
-
         </div>
 
         <p class="footer-copy">
@@ -306,7 +257,7 @@
             const items = document.querySelectorAll('.gallery-item');
             const button = document.getElementById('gallery-toggle');
 
-            // 要素が見つからなければ何もしない）
+            // 要素が見つからなければ何もしない
             if (!track || !button) return;
 
             let paused = false;
@@ -330,7 +281,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>
